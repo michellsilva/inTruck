@@ -43,4 +43,15 @@ public class ServicoVeiculosImpl implements ServicoVeiculos {
 	public List<Veiculo> buscarVeiculoMarca(String marca) {
 		return this.veiculos.findByMarca(marca);	
 	}
+
+	@Override
+	public void removerVeiculo(Long id) throws VeiculoInexistenteException {
+		this.veiculos.delete(id);
+		
+	}
+
+	@Override
+	public Veiculo buscarVeiculoId(Long id) throws VeiculoInexistenteException {
+		return this.veiculos.findOne(id);
+	}
 }

@@ -10,7 +10,5 @@ public interface RepositorioMercadorias extends CrudRepository<Mercadoria, Long>
 	
 	public Mercadoria findByDescricao(String descricao);
 	public List<Mercadoria> findByDescricaoContaining(String descricao);
-	
-	
-	 
+	public List<Mercadoria> ordenarMercadoriaDistancia(int[] ids);	 
 }

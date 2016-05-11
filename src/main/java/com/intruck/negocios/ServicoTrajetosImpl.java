@@ -3,6 +3,7 @@ package com.intruck.negocios;
 import java.util.Date;
 import java.util.List;
 
+import org.hibernate.cfg.NotYetImplementedException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,6 +15,7 @@ import com.intruck.persistencia.RepositorioTrajetos;
 @Service
 public class ServicoTrajetosImpl implements ServicoTrajetos {
 	@Autowired private RepositorioTrajetos trajetos;		
+	
 	@Override
 	public void salvarTrajeto(Trajeto trajeto) throws TrajetoExistenteException {		
 		this.trajetos.save(trajeto);				
@@ -41,6 +43,19 @@ public class ServicoTrajetosImpl implements ServicoTrajetos {
 	public List<Trajeto> buscarDtInclusaoIntervalo(Date dtInicial, Date dtFinal) {
 		return this.trajetos.findByDtInclusaoBetween(dtInicial, dtFinal);	
 	}
+	
+	public List<Trajeto> filtroTrajeto(Date dtInicial, Date dtFinal, Long trajetoId, int status, long mercadoriaId) {
+		throw new NotYetImplementedException("Método não implementado");
+//		this.trajetos.filtroTrajeto(dtInicial, dtFinal, trajetoId, status, mercadoriaId);
+	}
+
+	@Override
+	public Trajeto buscarTrajetoId(Long id) {
+		return this.trajetos.findOne(id);
+	}
+		
+		
+	
 	
 	
 

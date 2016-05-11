@@ -14,6 +14,7 @@ public interface ServicoMercadorias {
 	public Mercadoria buscarMercadoria(String descricao) throws MercadoriaInexistenteException;
 	public List<Mercadoria> buscarMercadoriaContem(String descricao ) throws MercadoriaInexistenteException;
 	public Mercadoria buscarMercadoriaId(Long id);
+	public List<Mercadoria> ordenarMercadoriaDistancia(int[] ids);	 
 	
 	
 }

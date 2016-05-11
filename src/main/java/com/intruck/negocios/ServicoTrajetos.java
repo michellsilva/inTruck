@@ -17,6 +17,8 @@ public interface ServicoTrajetos {
 	public List<Trajeto> listarTodosTrajeto();	
 	public List<Trajeto> buscarTrajetoData(Date data);
 	public List<Trajeto> buscarDtInclusaoIntervalo(Date dtInicial, Date dtFinal );
+	public List<Trajeto> filtroTrajeto(Date dtInicial, Date dtFinal, Long trajetoId, int status, long mercadoriaId);
+	public Trajeto buscarTrajetoId(Long id);
 	
 	
 }

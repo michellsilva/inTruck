@@ -2,6 +2,7 @@ package com.intruck.negocios;
 
 import java.util.List;
 
+import org.hibernate.cfg.NotYetImplementedException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -47,6 +48,13 @@ public class ServicoMercadoriasImpl implements ServicoMercadorias {
 	@Override
 	public List<Mercadoria> buscarMercadoriaContem(String descricao) throws MercadoriaInexistenteException {
 		return this.mercadorias.findByDescricaoContaining(descricao);
+	}
+
+	@Override
+	public List<Mercadoria> ordenarMercadoriaDistancia(int[] ids) {
+		throw new NotYetImplementedException("Método não implementado - ordenarMercadoriaDistancia");
+//		this.mercadorias.ordenarMercadoriaDistancia(ids);
+		
 	}
 
 }
