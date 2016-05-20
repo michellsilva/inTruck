@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Alterar caminhao</title>
+
+ <link href="css/bootstrap.min.css" rel="stylesheet">
+ <link href="css/style.css" rel="stylesheet">
+</head>
+<body> 
+<nav class="navbar navbar-inverse navbar-fixed-top">
+ <div class="container-fluid">
+  <div class="navbar-header">
+   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+   </button>
+   <a class="navbar-brand" href="#">InTruck</a>
+  </div>
+  <div id="navbar" class="navbar-collapse collapse">
+   <ul class="nav navbar-nav navbar-right">
+    <li><a href="Index.html">Inicio</a></li>
+    <li><a href="view_Caminhao.html">Caminhao</a></li>
+    <li><a href="view_Mercadoria.html">Mercadoria/Pedido</a></li>
+    
+   </ul>
+  </div>
+ </div>
+</nav>
+<div id="main" class="container-fluid">
+ <h3 class="page-header">Alterar Caminhao</h3>
+ <form action="Salvar_caminhao">
+  <!-- area de campos do form -->
+  <div class="row">
+ <div class="form-group col-md-4">
+   <label for="campo1">placa</label>
+   <input type="text" class="form-control" id="campo1">
+ </div>
+ 
+ <div class="form-group col-md-4">
+   <label for="campo2">Marca</label>
+   <input type="text" class="form-control" id="campo3">
+ </div>
+ 
+ <div class="form-group col-md-4">
+   <label for="campo3">Modelo</label>
+   <input type="text" class="form-control" id="campo3">
+ </div>
+ <div class="form-group col-md-4">
+   <label for="campo1">ano</label>
+   <input type="text" class="form-control" id="campo1">
+ </div>
+  <div class="form-group col-md-4">
+   <label for="campo1">Cor</label>
+   <input type="text" class="form-control" id="campo1">
+ </div>
+ 
+ <div class="form-group col-md-4">
+   <label for="campo2">Altura</label>
+   <input type="text" class="form-control" id="campo3">
+ </div>
+ 
+ <div class="form-group col-md-4">
+   <label for="campo3">Largura</label>
+   <input type="text" class="form-control" id="campo3">
+ </div>
+ <div class="form-group col-md-4">
+   <label for="campo1">Comprimento</label>
+   <input type="text" class="form-control" id="campo1">
+ </div>
+ <div class="form-group col-md-4">
+   <label for="campo1">Capacidade</label>
+   <input type="text" class="form-control" id="campo1">
+ </div>
+ 
+ <div class="form-group col-md-4">
+   <label for="campo2">ativo</label>
+   <input type="text" class="form-control" id="campo3">
+ </div>
+ 
+  <!-- fim area de campos do form -->
+</div>
+  <hr />
+  <div id="actions" class="row">
+    <div class="col-md-12">
+      <button type="submit" class="btn btn-primary">Salvar</button>
+      <a href="view_Caminhao.html" class="btn btn-default">Cancelar</a>
+    </div>
+  </div>
+</form>
+</div>
+ <script src="js/jquery.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Inicio</title>
+
+ <link href="css/bootstrap.min.css" rel="stylesheet">
+ <link href="css/style.css" rel="stylesheet">
+</head>
+<body> 
+<nav class="navbar navbar-inverse navbar-fixed-top">
+ <div class="container-fluid">
+  <div class="navbar-header">
+   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+   </button>
+   <a class="navbar-brand" href="#">InTruck</a>
+  </div>
+  <div id="navbar" class="navbar-collapse collapse">
+   <ul class="nav navbar-nav navbar-right">
+    <li><a href="Index.html">Inicio</a></li>
+    <li><a href="view_Caminhao.html">Caminhao</a></li>
+    <li><a href="view_Mercadoria.html">Mercadoria/Pedido</a></li>
+    
+   </ul>
+  </div>
+ </div>
+</nav>
+<div id="main" class="container-fluid">
+ <h3 class="page-header">Alterar Entrega</h3>
+ <form action="Salvar_entrega">
+  <!-- area de campos do form -->
+  
+  <div class="row">
+<h4>Lista Caminhao<h4>
+</div>
+  <div class="row">
+  <div class="col-md-1">
+ <p><strong>ID</strong></p>
+ <p>{Valor do Campo}</p>
+</div>
+<div class="col-md-1">
+ <p><strong>placa</strong></p>
+ <p>{Valor do Campo}</p>
+</div>
+<div class="col-md-1">
+ <p><strong>marca</strong></p>
+ <p>{Valor do Campo}</p>
+</div>
+<div class="col-md-1">
+ <p><strong>modelo</strong></p>
+ <p>{Valor do Campo}</p>
+</div>
+<div class="col-md-1">
+ <p><strong>ano</strong></p>
+ <p>{Valor do Campo}</p>
+</div>
+<div class="col-md-1">
+ <p><strong>cor</strong></p>
+ <p>{Valor do Campo}</p>
+</div>
+<div class="col-md-1">
+ <p><strong>altura</strong></p>
+ <p>{Valor do Campo}</p>
+</div>
+<div class="col-md-1">
+ <p><strong>largura</strong></p>
+ <p>{Valor do Campo}</p>
+</div>
+<div class="col-md-1">
+ <p><strong>comprimento</strong></p>
+ <p>{Valor do Campo}</p>
+</div>
+<div class="col-md-1">
+ <p><strong>capacidade</strong></p>
+ <p>{Valor do Campo}</p>
+</div>
+<div class="col-md-1">
+ <p><strong>ativo</strong></p>
+ <p>{Valor do Campo}</p>
+</div>
+</div>
+<hr />
+<div class="row">
+<h4>Lista Mercadoria<h4>
+</div>
+<div class="row">
+<div class="col-md-1">
+ <p><strong>ID</strong></p>
+ <p>{Valor do Campo}</p>
+</div>
+<div class="col-md-1">
+ <p><strong>descricao</strong></p>
+ <p>{Valor do Campo}</p>
+</div>
+<div class="col-md-1">
+ <p><strong>peso</strong></p>
+ <p>{Valor do Campo}</p>
+</div>
+<div class="col-md-1">
+ <p><strong>fragilidade</strong></p>
+ <p>{Valor do Campo}</p>
+</div>
+<div class="col-md-1">
+ <p><strong>prioridade</strong></p>
+ <p>{Valor do Campo}</p>
+</div>
+<div class="col-md-1">
+ <p><strong>municipio</strong></p>
+ <p>{Valor do Campo}</p>
+</div>
+<div class="col-md-1">
+ <p><strong>cep</strong></p>
+ <p>{Valor do Campo}</p>
+</div>
+<div class="col-md-1">
+ <p><strong>logradouro</strong></p>
+ <p>{Valor do Campo}</p>
+</div>
+<div class="col-md-1">
+ <p><strong>numero</strong></p>
+ <p>{Valor do Campo}</p>
+</div>
+<div class="col-md-1">
+ <p><strong>nomeReceb</strong></p>
+ <p>{Valor do Campo}</p>
+</div>
+<div class="col-md-1">
+ <p><strong>telefoneReceb</strong></p>
+ <p>{Valor do Campo}</p>
+</div>
+<div class="col-md-1">
+ <p><strong>ativo</strong></p>
+ <p>{Valor do Campo}</p>
+</div>
+</div>
+<hr />
+
+ <div class="row">
+ <div class="form-group col-md-3">
+   <label for="campo1">Data inclusao</label>
+   <input type="text" class="form-control" id="campo1">
+ </div>
+ 
+ <div class="form-group col-md-3">
+   <label for="campo2">Tempo previsto</label>
+   <input type="text" class="form-control" id="campo3">
+ </div>
+ 
+ <div class="form-group col-md-3">
+   <label for="campo3">Tempo real</label>
+   <input type="text" class="form-control" id="campo3">
+ </div>
+ <div class="form-group col-md-3">
+   <label for="campo1">Status</label>
+   <input type="text" class="form-control" id="campo1">
+ </div>
+ 
+ </div>
+ 
+  <!-- fim area de campos do form -->
+</div>
+  <hr />
+  <div id="actions" class="row">
+    <div class="col-md-12">
+      <button type="submit" class="btn btn-primary">Salvar</button>
+      <a href="index.html" class="btn btn-default">Cancelar</a>
+    </div>
+  </div>
+</form>
+</div>
+ <script src="js/jquery.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

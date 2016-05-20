@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Listar Mercadoria</title>
+
+</div>
+ <link href="css/bootstrap.min.css" rel="stylesheet">
+ <link href="css/style.css" rel="stylesheet">
+</head>
+<body> 
+<!-- Modal -->
+<div class="modal fade" id="delete-modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="modalLabel">Excluir Mercadoria</h4>
+      </div>
+      <div class="modal-body">
+        Deseja realmente excluir esta mercadoria?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Sim</button>
+ <button type="button" class="btn btn-default" data-dismiss="modal">N&atilde;o</button>
+      </div>
+    </div>
+  </div>
+</div> <!-- /.modal -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+ <div class="container-fluid">
+  <div class="navbar-header">
+   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+   </button>
+   <a class="navbar-brand" href="#">InTruck</a>
+  </div>
+  <div id="navbar" class="navbar-collapse collapse">
+   <ul class="nav navbar-nav navbar-right">
+    <li><a href="Index.html">Inicio</a></li>
+    <li><a href="view_Caminhao.html">Caminhao</a></li>
+    <li><a href="view_Mercadoria.html">Mercadoria/Pedido</a></li>
+    
+   </ul>
+  </div>
+ </div>
+</nav>
+<div id="main" class="container-fluid">
+ <div id="top" class="row">
+    <div class="col-md-3">
+        <h2>Listar Mercadoria</h2>
+    </div>
+ 
+    <div class="col-md-6">
+        <div class="input-group h2">
+            <input name="data[search]" class="form-control" id="search" type="text" placeholder="Pesquisar mercadoria">
+            <span class="input-group-btn">
+                <button class="btn btn-primary" type="submit">
+                    <span class="glyphicon glyphicon-search"></span>
+                </button>
+            </span>
+        </div>
+    </div>
+ 
+    <div class="col-md-3">
+        <a href="create_Mercadoria.html" class="btn btn-primary pull-right h2">Nova Mercadoria</a>
+    </div>
+</div> <!-- /#top -->
+<div class="row">
+<div class="col-md-1">
+ <p><strong>ID</strong></p>
+ <p>{Valor do Campo}</p>
+</div>
+<div class="col-md-1">
+ <p><strong>descricao</strong></p>
+ <p>{Valor do Campo}</p>
+</div>
+<div class="col-md-1">
+ <p><strong>peso</strong></p>
+ <p>{Valor do Campo}</p>
+</div>
+<div class="col-md-1">
+ <p><strong>fragilidade</strong></p>
+ <p>{Valor do Campo}</p>
+</div>
+<div class="col-md-1">
+ <p><strong>prioridade</strong></p>
+ <p>{Valor do Campo}</p>
+</div>
+<div class="col-md-1">
+ <p><strong>municipio</strong></p>
+ <p>{Valor do Campo}</p>
+</div>
+<div class="col-md-1">
+ <p><strong>cep</strong></p>
+ <p>{Valor do Campo}</p>
+</div>
+<div class="col-md-1">
+ <p><strong>logradouro</strong></p>
+ <p>{Valor do Campo}</p>
+</div>
+<div class="col-md-1">
+ <p><strong>numero</strong></p>
+ <p>{Valor do Campo}</p>
+</div>
+<div class="col-md-1">
+ <p><strong>nomeReceb</strong></p>
+ <p>{Valor do Campo}</p>
+</div>
+<div class="col-md-1">
+ <p><strong>telefoneReceb</strong></p>
+ <p>{Valor do Campo}</p>
+</div>
+<div class="col-md-1">
+ <p><strong>ativo</strong></p>
+ <p>{Valor do Campo}</p>
+</div>
+</div>
+<hr />
+<div id="actions" class="row">
+ <div class="col-md-6">
+  <a href="update_Mercadoria.html" class="btn btn-primary">Editar</a>
+  <a href="index.html" class="btn btn-default">Fechar</a>
+  <a href="#" class="btn btn-default" data-toggle="modal" data-target="#delete-modal">Excluir</a>
+ </div>
+</div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
